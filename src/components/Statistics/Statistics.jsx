@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { StatisticsLabel } from './Statistics.styled';
 
 export const Statistics = (props) => {
@@ -9,4 +10,8 @@ export const Statistics = (props) => {
         <StatisticsLabel>Total: <span>{total}</span></StatisticsLabel>
         <StatisticsLabel>Positive percentage: <span>{positivePercentage}</span></StatisticsLabel>
     </div>
+}
+
+Statistics.propTypes = {
+    props: PropTypes.objectOf(PropTypes.number)
 }

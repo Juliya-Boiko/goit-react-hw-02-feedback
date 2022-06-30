@@ -47,16 +47,16 @@ export class App extends Component {
       <Section title="Please leave feedback">
         <FeedbackOptions onLeaveFeedback={this.handleClick} />
       </Section>
-
       <Section title="Statistics">
-        {this.state.total === 0 ? <Notification message="There is no feedback" /> :           <Statistics
-          good={this.state.good}
-          neutral={this.state.neutral}
-          bad={this.state.bad}
-          total={this.state.total}
-          positivePercentage={this.state.positivePersentage} />}
+        {this.state.total === 0
+          ? <Notification message="There is no feedback" />
+          : <Statistics
+            good={this.state.good}
+            neutral={this.state.neutral}
+            bad={this.state.bad}
+            total={this.state.total}
+            positivePercentage={this.state.positivePersentage} />}
       </Section>
     </Container>
   }
-
 }
