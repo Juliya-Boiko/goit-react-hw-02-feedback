@@ -1,6 +1,9 @@
 import 'modern-normalize';
-import { AppContainer } from './AppContainer.styled';
 import { Component } from 'react';
+import { Container } from './common/Container.styled';
+import { Section } from './Section/Section';
+import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
+// import { Statistics } from './Statistics/Statistics';
 
 export class App extends Component {
   state = {
@@ -39,19 +42,19 @@ export class App extends Component {
   }
 
   render() {
-    return <AppContainer>
-      <h2>Please leave feedback</h2>
-      <button type="button" var="good" onClick={this.handleClick}>good</button>
-      <button type="button" var="neutral" onClick={this.handleClick}>neutral</button>
-      <button type="button" var="bad" onClick={this.handleClick}>bad</button>
+    return <Container>
+      <Section title="Please leave feedback">
+        <FeedbackOptions onLeaveFeedback={this.handleClick} />
+      </Section>
 
-      <h2>Statistics</h2>
-      <p>good: {this.state.good}</p>
-      <p>neutral: {this.state.neutral}</p>
-      <p>bad: {this.state.bad}</p>
-      <p>total: {this.state.total}</p>
-      <p>positivePersentage: {this.state.positivePersentage}</p>
-    </AppContainer>
+      <Section title="Statistics">
+        <p>good: {this.state.good}</p>
+        <p>neutral: {this.state.neutral}</p>
+        <p>bad: {this.state.bad}</p>
+        <p>total: {this.state.total}</p>
+        <p>positivePersentage: {this.state.positivePersentage}</p>
+      </Section>
+    </Container>
   }
 
 }
