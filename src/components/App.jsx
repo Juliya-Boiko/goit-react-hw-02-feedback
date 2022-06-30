@@ -32,7 +32,7 @@ export class App extends Component {
   }
 
   handleClick = (evt) => { 
-    const type = evt.currentTarget.getAttribute('var');
+    const type = evt.currentTarget.getAttribute('value');
     this.setState((prevState) => {
       return {
         [type]: prevState[type] + 1,
@@ -43,19 +43,20 @@ export class App extends Component {
   }
 
   render() {
+    const state = this.state;
     return <Container>
       <Section title="Please leave feedback">
         <FeedbackOptions onLeaveFeedback={this.handleClick} />
       </Section>
       <Section title="Statistics">
-        {this.state.total === 0
+        {state.total === 0
           ? <Notification message="There is no feedback" />
           : <Statistics
-            good={this.state.good}
-            neutral={this.state.neutral}
-            bad={this.state.bad}
-            total={this.state.total}
-            positivePercentage={this.state.positivePersentage} />}
+            good={state.good}
+            neutral={state.neutral}
+            bad={state.bad}
+            total={state.total}
+            positivePercentage={state.positivePersentage} />}
       </Section>
     </Container>
   }

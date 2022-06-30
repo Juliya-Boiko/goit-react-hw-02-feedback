@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 
 export const FeedbackOptions = ({ onLeaveFeedback }) => {
     return <div>
-        <button type="button" var="good" onClick={onLeaveFeedback}>good</button>
-        <button type="button" var="neutral" onClick={onLeaveFeedback}>neutral</button>
-        <button type="button" var="bad" onClick={onLeaveFeedback}>bad</button>
+        <button type="button" value="good" onClick={onLeaveFeedback}>Good</button>
+        <button type="button" value="neutral" onClick={onLeaveFeedback}>Neutral</button>
+        <button type="button" value="bad" onClick={onLeaveFeedback}>Bad</button>
     </div>
 }
 
