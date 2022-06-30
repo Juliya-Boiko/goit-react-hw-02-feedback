@@ -7,6 +7,6 @@ export const Statistics = (props) => {
         <StatisticsLabel>Neutral: <span>{neutral}</span></StatisticsLabel>
         <StatisticsLabel>Bad: <span>{bad}</span></StatisticsLabel>
         <StatisticsLabel>Total: <span>{total}</span></StatisticsLabel>
-        <StatisticsLabel>Positive percentage: <span>{positivePercentage}%</span></StatisticsLabel>
+        <StatisticsLabel>Positive percentage: <span>{positivePercentage}</span></StatisticsLabel>
     </div>
 }
