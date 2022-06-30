@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const PrimButton = styled.button`
+export const PrimaryButton = styled.button`
     color: red
 `;
