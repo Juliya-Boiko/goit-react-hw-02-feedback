@@ -35,7 +35,7 @@ export class App extends Component {
   render() {
     const state = this.state;
     return <Container>
-       <Section title="Please leave feedback">
+      <Section title="Please leave feedback">
          <FeedbackOptions options={state} onLeaveFeedback={this.handleClick} />
        </Section>
       <Section title="Statistics">

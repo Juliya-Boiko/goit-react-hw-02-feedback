@@ -5,13 +5,18 @@ export const SectionContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: ${props => props.theme.ruler.standart};
+    margin: ${props => props.theme.ruler.small};
+    padding: ${props => props.theme.ruler.double};
+    border-radius: 3rem;
+      box-shadow:.8rem .8rem 1.4rem #c8d0e7, 
+            -.2rem -.2rem 1.8rem white;
+    color: ${props => props.theme.colors.red};
 `;
 
 export const SectionTitle = styled.h2`
-    margin-bottom: ${props => props.theme.ruler.double};
+    margin: ${props => props.theme.ruler.double} 0;
     text-align: center;
-    font-size: ${props => props.theme.ruler.double};
-    color: ${props => props.theme.colors.shadow};
-    text-shadow: 1px 1px 1px ${props => props.theme.colors.white};
+    font-weight: ${props => props.theme.fontWeight.normal};
+    font-size: 1.8rem;
+    letter-spacing: 1px;
 `;

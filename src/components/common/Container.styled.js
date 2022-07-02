@@ -6,5 +6,6 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: ${props => props.theme.ruler.double};
     background-color: ${props => props.theme.colors.bgc};
 `;
