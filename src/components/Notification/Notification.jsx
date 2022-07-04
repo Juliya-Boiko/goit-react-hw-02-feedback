@@ -4,9 +4,9 @@ import { MdOutlineSpeakerNotesOff } from "react-icons/md";
 
 export const Notification = ({ message }) => {
     return <NotificationMessage>
-        <NotificationText>{message}</NotificationText>
-        <MdOutlineSpeakerNotesOff />
-    </NotificationMessage>
+                <NotificationText>{message}</NotificationText>
+                <MdOutlineSpeakerNotesOff />
+            </NotificationMessage>
 }
 
 Notification.propTypes = {

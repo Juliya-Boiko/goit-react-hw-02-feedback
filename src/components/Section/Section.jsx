@@ -4,10 +4,10 @@ import { GiCoffeeBeans } from 'react-icons/gi';
 
 export const Section = ({ title, children }) => {
     return <SectionContainer>
-        <GiCoffeeBeans size="50px"/>
-        <SectionTitle>{title}</SectionTitle>
-        {children}
-    </SectionContainer>
+                <GiCoffeeBeans size="50px"/>
+                <SectionTitle>{title}</SectionTitle>
+                {children}
+            </SectionContainer>
 }
 
 Section.propTypes = {
